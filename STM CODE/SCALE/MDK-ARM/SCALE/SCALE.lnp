@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"scale\startup_stm32f103x6.o"
+"scale\lcd16x2.o"
+"scale\main.o"
+"scale\stm32f1xx_it.o"
+"scale\stm32f1xx_hal_msp.o"
+"scale\stm32f1xx_hal_gpio_ex.o"
+"scale\stm32f1xx_hal_tim.o"
+"scale\stm32f1xx_hal_tim_ex.o"
+"scale\stm32f1xx_hal.o"
+"scale\stm32f1xx_hal_rcc.o"
+"scale\stm32f1xx_hal_rcc_ex.o"
+"scale\stm32f1xx_hal_gpio.o"
+"scale\stm32f1xx_hal_dma.o"
+"scale\stm32f1xx_hal_cortex.o"
+"scale\stm32f1xx_hal_pwr.o"
+"scale\stm32f1xx_hal_flash.o"
+"scale\stm32f1xx_hal_flash_ex.o"
+"scale\stm32f1xx_hal_exti.o"
+"scale\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "SCALE\SCALE.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SCALE.map" -o SCALE\SCALE.axf
